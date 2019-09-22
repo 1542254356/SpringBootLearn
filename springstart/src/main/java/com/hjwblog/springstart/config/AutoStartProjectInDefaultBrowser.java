@@ -16,7 +16,7 @@ public class AutoStartProjectInDefaultBrowser implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        String path = "/";
+        String path = "/user/all";
         try {
             Runtime.getRuntime().exec("cmd /c start http://localhost:" + port + path);
         } catch (Exception ex) {
