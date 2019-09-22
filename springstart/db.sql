@@ -1,0 +1,7 @@
+DROP TABLE IF EXISTS `user`;
+CREATE TABLE `user` (
+    `id` VARCHAR(32) NOT NULL PRIMARY KEY COMMENT 'id',
+    `name` VARCHAR(32) DEFAULT NULL COMMENT '用户名',
+    `password` VARCHAR(32) DEFAULT NULL COMMENT '密码'
+);
+
